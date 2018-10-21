@@ -1,0 +1,126 @@
+/* Step 1 - Add a nice background */
+body {
+    background-image: url(Images/brain.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    font-family: "Arial Black", Gadget, sans-serif;
+    background-size:cover;
+
+}
+
+
+/* Step 2 - Add a nice card style */
+.card {    
+    width:  1.5em;
+    height: 2.5em;
+    color: #000000;
+    font-weight: bold;
+    margin: 14px;  
+    background-color: green;
+    border:solid 1px black;
+    font-size: 3em; 
+}
+
+/* Step 3 - Add a nice hover effect */
+.card:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+    background-color: #2C7CFF;
+    border: solid 3px;
+    
+}
+
+/* Step 4 (+4 points) - Write a style for a flipped card */
+.card.flipped {
+   transition : 0.5s;
+       background:#2C7CFF;       
+      opacity: 0.2;
+   
+}
+
+/* Step 5 - Add a nice style to the message element */
+#message {
+    font-size:2em;
+    color: yellow;
+    font-style: bold;
+    margin-left: 100px;
+    
+   
+}
+
+/* Step 6 - Add 5 more style changes... */
+/* 1) */
+
+#start {
+   
+    background-color: white;
+    color: black;
+     width: 1100px;
+    font-size: 1em;
+     padding: 30px;
+    display:block;
+    margin: 50px auto;
+
+    text-align: center;
+    border-style: double;
+   }
+
+#start:hover{
+        transition: 0.9s;
+    background-color: red;
+
+    
+}
+
+/* 2) */
+#reset {
+    font-size: 2em;
+    border: none;
+    background-color: red;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    margin: 10px auto;
+}
+
+/*3) */
+
+#reset:hover{
+    transition: 0.5s;
+    
+    
+}
+
+
+/* 4) */
+
+#score{
+  
+    text-align: right;
+    color: white;
+    font-size:1.5em;
+}
+
+/* 5) */
+.rotated:not(:empty) {    
+    transform: rotateY(180deg);
+   
+}  
+
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+} 
+
+.card > span 
+{
+    transform: rotateY(180deg);
+    position: absolute;
+   
+}
+
+
+
+
+
